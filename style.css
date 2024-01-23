@@ -1,0 +1,629 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#navigation ul li i {
+    position: absolute;
+    top: 12px;
+    right: 5px;
+}
+#navigation{
+    background-color: #043566;
+    background-image: linear-gradient(#3069a3, #07305a );
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navigation h2 {
+    color: yellow;
+    margin-left: 42px;
+    font-style: oblique;
+    font-family: fangsong;
+}
+#navigation > ul {
+    display: flex;
+    margin-right: 50px;
+}
+#navigation > ul > li{
+    list-style: none;
+    padding: 8px 20px;
+    transition: 0.3s;
+    border-right: 2px solid white;
+    position: relative;
+}
+#navigation > ul > li:hover{
+    background-color: #055aaf;
+    cursor: pointer;
+}
+#navigation ul >li:nth-child(1){
+    border-left: 2px solid white;
+}
+#navigation > ul >li > a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+#navigation > ul > li ul {
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleY(0);
+    transform-origin: top;
+    box-shadow: 5px 5px 10px blue;
+}
+#navigation > ul > li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+
+/* dropdown menu code starts here */
+
+.dropdown {
+    background-color: #1e4974;
+    text-align: center;
+    margin-top: 8px;
+    width: 190px;
+    position: absolute;
+    margin-left: -22px;
+    transition: 0.4s;
+
+}
+.dropdown li{
+    list-style: none;
+    text-align: center;
+    padding: 10px 10px;
+    border-left:2px solid white;
+    border-bottom: 1px solid white;
+}
+.dropdown li:hover{
+    background-color: #055aaf;
+}
+.dropdown li:nth-child(1){
+    border-top: 1px solid white;
+}
+.dropdown li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+/* Hero area css code starts from here  */
+.main-header{
+    background-image: url(images/abstract-technology-chip-processor-background-circuit-board_115579-1236.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    height: 92vh;
+    background-position: 40%;
+    color: white;
+}
+.header-container{
+    padding-top:100px;
+}
+.header-container h1 {
+    font-size: 35px;
+    padding: 12px 2px;
+    color: yellow;
+}
+.header-container h4 {
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.185);
+    display: inline-block;
+    padding: 4px 20px;
+}
+.header-container h5{
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.082);
+    display: inline-block;
+    padding: 4px 20px;
+} 
+.header-container button {
+    margin-top: 200px;
+    padding: 11px 16px;
+    font-size: 23px;
+    background-color: black;
+    color: gold;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.header-container button:hover{
+    background-color: gold;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 21px;
+}   
+.social-icon a {
+    font-size: 38px;
+    width: 59px;
+    height: 54px;
+    display: inline-block;
+    background-color: rgba(0, 0, 255, 0.027);
+    color: yellow;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 25px;
+    text-decoration: none;
+    transition: 0.5s;
+    outline: 2px solid #e6d9d9;
+    line-height: 56px;
+}
+.social-icon{
+    margin-top: 20px;
+}
+.social-icon a:hover{
+    background-color: yellow;
+    color: black;
+    transform: rotate(720deg);
+}
+/* Frist section css code starts from here */
+
+.first-container{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 100px 0px;
+}
+.learn-programming{
+    text-align: center;
+    width: 300px;
+}
+.web-developer{
+    text-align: center;
+    width: 300px;
+}
+.learn-freelancing{
+    text-align: center;
+    width: 300px;
+}
+.first-container i{
+    font-size: 50px;
+}
+.first-container h2{
+    margin: 15px 0px;
+}
+.first-container div {
+    padding: 30px 10px;
+    transition: 0.5s;
+}
+.first-container div:hover{
+    box-shadow: 3px 3px 10px gray;
+    
+}
+/* second section css code starts from here */
+.smartarea-title{
+
+}
+.smartarea-title h2{
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+}
+.smartarea-title h2::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    top: 56px;
+    left: 625px;
+    height: 5px;
+    background-color: #830707;
+}
+.smart-area{
+    padding: 40px 0px;
+    display: flex;
+    width: 1000px;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+.smart-area-text{
+    width: 500px;
+}
+.smart-area-text h2{
+    margin: 20px 0px;
+    font-size: 30px;
+}
+.smart-area-text h4{
+    color: #830707;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.smart-area-text a {
+    text-decoration: none;
+    background-color: #830707;
+    color: white;
+    font-size: 20px;
+    padding: 10px 30px;
+    margin: 20px 0px;
+    display: inline-block;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.smart-area-text a:hover{
+    background-color: #460404;
+}
+/* Third section css code starts from here (services section ) */
+.third{
+    background-color: #fafafa;
+}
+.services-area-title{
+    text-align: center;
+    margin: 26px 0px;
+}
+.services-area-title h2{
+    font-size: 40px;
+}
+.each-services-parent{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 1000px;
+    margin: 15px auto;
+    gap: 20px;
+    padding-bottom: 60px;
+}
+.each-services{
+    background-color: lightblue;
+    text-align: center;
+    padding: 30px 5px;
+    border-radius: 10px;
+    transition: 0.5s;
+    box-shadow: 8px 8px 10px gray;
+}
+.each-services:hover{
+    background-color: #b4e1f0;
+}
+.each-services i{
+    font-size: 40px;
+    color: #830707de;
+}
+.each-services h3{
+    margin: 15px 0px;
+}
+/* fourth section css code starts from here  */
+#fourth-section{
+    background-color: whitesmoke;
+}
+.pricing-area-container{
+    width: 1000px;
+    margin: 0px auto 25px auto;
+}
+.pricing-area-parent{
+    display: flex;
+    justify-content: space-between;
+
+}
+.pricing-title h2{
+    text-align: center;
+    font-size: 35px ;
+    padding: 50px 0px;
+}
+.single-card-image img{
+    width: 310px;
+    max-width: 100%;
+}
+.single-card{
+    width: 310px;
+    text-align: center;
+    box-shadow: 5px 5px 10px gray;
+}
+.single-card h3{
+    margin: 10px 0px;
+    font-size: 25px;
+}
+.month-pricing{
+    border-top: 1px dashed gray;
+    border-bottom: 1px dashed gray;
+    padding: 15px 0px;
+    margin: 15px 20px;
+}
+.month-pricing-span1{
+    font-size: 25px;
+}
+.month-pricing-span2{
+    color: gray;
+}
+.single-card button{
+    background-color: #830707;
+    color: white;
+    padding: 7px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 20px;
+}
+.single-card button:hover{
+    background-color: #83070700;
+    color: red;
+}
+.single-card a{
+    text-decoration: none;
+    margin: 14px 0;
+    display: inline-block;
+}
+/* fifth section css starts from here  */
+.fifth{
+    background-color: bisque;
+    padding-bottom: 40px;
+}
+.testo-container{
+    width: 1000px;
+    margin: auto;
+}
+.testimonial-title{
+    text-align: center;
+    padding: 50px 0;
+}
+.testimonial-title h2{
+    font-size: 35px;
+}
+.testimonial-title h4{
+    color: gray;
+    letter-spacing: 0.3em;
+}
+
+.testo-single-card-parent{
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(2, 1fr);
+}
+.test-single-card{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+.testo-image-div{
+    width: 200px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.testo-image-div img{
+    max-width: 100%;
+    border-radius: 50%;
+    border: 2px solid red;
+}
+.testo-name{
+    font-size: 22px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.testo-ratings{
+    color: #ffa534;
+    margin-top: 10px;
+}
+/* parallax section css code starts from here  */
+
+#parallax-section{
+    padding: 90px 0px;
+    background-image: url(images/parallax.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.parallax-item-parent{
+    display: flex;
+    width: 1000px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.parallax-item-parent div i{
+    font-size: 40px;
+}
+.parallax-item-parent div h2{
+    font-size: 40px;
+    margin: 20px 0px;
+}
+.parallax-item-parent div h3{
+
+}
+/* blog section css starts from here  */
+
+
+.blog-container{
+    width: 1000px;
+    margin: 50px auto;
+}
+.blog-items-parent{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+.blog-image{
+    max-width: 100%;
+    height: 250px;
+    transition: 0.5s;
+}
+.blog-image-icon-div{
+    position: relative;
+    overflow: hidden;
+}
+
+.blog-icons {
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-content: center;
+
+    opacity: 0;  
+    transition: 0.5s;
+}
+.blog-image-icon-div:hover .blog-icons{
+    opacity: 1;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.336);
+}
+.blog-image-icon-div:hover .blog-image{
+    transform: scale(1.5);
+}
+.blog-icons i{
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+.single-item-test{
+    text-align: center;
+    margin: 10px 0;
+}
+.single-item-test p{
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.493);
+}
+/* contact form css starts from here  */
+
+.contact-container{
+    width: 1000px;
+    margin: auto;
+    padding-bottom: 100px;
+}
+.form-parent {
+    background-color: #eaecf0;
+    display: flex;
+}
+.fullname-email-parent{
+    display: flex;
+}
+.fullname-email-parent input{
+    width: 200px;
+    height: 40px;
+    margin: 0 20px;
+    border: none;
+    padding: 0 10px;
+}
+.fullname-email-parent h4{
+    margin: 40px 20px 10px 20px;
+}
+.form-tag{
+    width: 600px;
+}
+.subject-input{
+    width: 85%;
+    height: 40px;
+    margin: 0 20px;
+    border: none;
+    padding: 0 10px;
+}
+.subject-input-text{
+    margin: 20px 20px 10px 20px;
+}
+.form-textarea{
+    width: 85%;
+    height: 100px;
+    border: none;
+    margin: 0 20px;
+    padding: 5px 10px;
+}
+.form-button{
+    background-color: #3252af;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    margin: 20px 0 0 20px;
+    transition: 0.5s;
+}
+.form-button:hover{
+    color: #055aaf;
+    background-color: white;
+    border: 1px solid black;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.form-address-parent{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+.form-single-address{
+    text-align: center;
+}
+.form-single-address i{
+    background-color: #3252af;
+    color: white;
+    padding: 20px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.form-single-address span{
+    font-weight: bold;
+}
+/* footer section starts here  */
+footer{
+    background-color: #023364;
+    color: gray;
+}
+.footer-container{
+    width: 1000px;
+    margin: 0px auto;
+}
+.footer-single-parent{
+    padding-bottom: 22px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.footer-single-item{
+    width: 235px;
+    overflow: hidden;
+}
+.footer-single-item h3{
+    color: white;
+    margin: 50px 0 20px 0;
+}
+.footer-single-div-p1{
+    margin-bottom: 20px;
+}
+.p2{
+    margin: 7px 0px;
+}
+
+.footer-single-item i{
+    color: white;
+    margin-right: 10px;
+}
+.footer-single-parent .footer-single-item:nth-child(2) p{
+    margin: 10px 0px;
+}
+.footer-single-parent .footer-single-item:nth-child(3) p{
+    margin: 10px 0px;
+}
+.footer-single-parent .footer-single-item:nth-child(4) p{
+    margin: 10px 0px;
+}
+.footer-single-parent .footer-single-item:nth-child(4) a{
+    text-decoration: none;
+    color: rgb(187, 36, 36);
+    margin: 5px 0px;
+}
+.footer-menu-item ul{
+    display: flex;
+    justify-content: center;
+}
+.footer-menu-item ul li{
+    list-style: none;
+    margin: 20px;
+}
+.footer-menu-item ul a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: gray;
+}
+.footer-menu-item p{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.footer-menu-item span{
+    color: brown;
+}
+
